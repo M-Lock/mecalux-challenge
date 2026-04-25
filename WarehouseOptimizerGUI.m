@@ -99,6 +99,6 @@ function WarehouseOptimizerGUI()
         drawnow; % Forzar a MATLAB a repintar la ventana inmediatamente
         
        [solucion, coste, area] = BayPlacementOptimized(appData.warehouse, appData.obstacles, appData.ceiling, appData.bays);
-   
+                                  visualizar_almacen_3D(appData.warehouse, appData.obstacles, appData.bays, appData.ceiling, solucion);
     end
 end
